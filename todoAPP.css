@@ -1,0 +1,10 @@
+h1 {
+    font-size: 30px;
+}
+.box {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border: 2px;
+    margin: 10px;
+}
