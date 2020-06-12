@@ -1,33 +1,45 @@
-<!--
-    Task List: Build a small project that can add and delete task
-    Functionality:
-    a. Add new task and show in task list;
-    b. Delete and existing task by click on the icon;
-    c. Clear all existing taks by clicking the "clear all task" button;
-    Optional:
-    Give an alert when user try to add task without any input
--->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>TODOAPP</title>
-        <link rel="stylesheet" type ="text/css" href="todoAPP.css"/>
-        <style></style>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="todoApp.css">
+        <title> TO DO APP</title>
     </head>
     <body>
-        <form>
-            <div>
-                <h1>Task List</h1>
-                <input type="text" placeholder="New Task" required> 
-                <input type="button" value="Add" onClick="alert('The data field is empty!')" class="box"/> 
+        <div class="warpper clearfix">
+            <div class="top-panel">
+                <div class="task-name" id="name-0">Task List</div>
+                <input type="text" class="task-value" id="name-0" placeholder="New Task">
+                <hr>
             </div>
-            <div>
-                <h1>Tasks</h1>
-                <input type="button" value="Delete" class="box"/>
+            <div class="tuttom-panel">
+                <div class="task-name" id="name-1">Tasks</div>
+                <div class="task-value" id="name-1">
+                    <table>
+                        <tr>
+                            <td>Task 1</td>
+                            <td>
+                                <button class="btn-delete"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Task 2</td>
+                            <td>
+                                <button class="btn-delete"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Task 3</td>
+                            <td>
+                                <button class="btn-delete"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div>
-                <input type="button" value="Clear All Tasks" class="box"/>
-            </div>
-        <script type></script>
+            <button class="btn-add">ADD TASK</button>
+            <button class="btn-remove">CLEAR ALL TASKS</button>
+        </div>
     </body>
+    <footer></footer>
 </html>

@@ -1,10 +1,85 @@
-h1 {
-    font-size: 30px;
+/**********************************************
+*** GENERAL
+**********************************************/
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.box {
-    background-color: blue;
-    color: white;
-    font-size: 20px;
-    border: 2px;
-    margin: 10px;
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+body {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
 }
+
+.top-panel, .button-panel {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/**********************************************
+*** DETAILS
+**********************************************/
+.task-name {
+    font-size: 32px;
+    text-align: left;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.task-value {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+    margin-bottom: 120px;
+}
+
+table, tr, td {
+    border: 1px, solid, gray;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    top: 80%;
+    transform: translateX(-50$);
+    color: whitesmoke;
+    background: black;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+i {
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1;
+    vertical-align: text-top;
+}
+
+.btn-add {
+    top: 15%;
+}
+
+.btn-remove {
+    top: 85%;
+}
+
+.btn-delete {}

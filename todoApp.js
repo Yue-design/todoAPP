@@ -1,14 +1,19 @@
-var task = new Array();
+/*
+controller
+*/
 
-function addItem(e) {
-    return task.push(e);
-}
+// step two: create an UI controller
+const UIcontroller = (() => {
+    const DOMstrings = {};
+    const NodeListForEach = (list, callback) => {};
+    return {};
+})();
 
-function deleteItem(e) {
-    delete e;
-    return task;
-}
-
-function clearItems(task) {
-    return [];
-}
+// step one: create a global controller
+const controller = (UIctrl => {
+    const setupEventListeners = () => {};
+    const ctrlAddTask = () => {};
+    const ctrlDeleteTask = () => {};
+    return {}
+})(UIcontroller);
+controller.init();
